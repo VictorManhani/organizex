@@ -7,7 +7,10 @@ block_cipher = None
 a = Analysis(['main.py'],
              pathex=['C:\\Users\\User\\Desktop\\Organizex-Photo_Organizer-master'],
              binaries=[],
-             datas=[('C:\\Users\\User\\Desktop\\Organizex-Photo_Organizer-master\\img\\blue.png', './img/'), ('C:\\Users\\User\\Desktop\\Organizex-Photo_Organizer-master\\img\\logo.png', './img/')],
+             datas=[
+                 ('C:\\Users\\User\\Desktop\\Organizex-Photo_Organizer-master\\img\\blue.png', './img/'), ('C:\\Users\\User\\Desktop\\Organizex-Photo_Organizer-master\\img\\logo.png', './img/'),
+                 ('C:\\Users\\User\\Desktop\\Organizex-Photo_Organizer-master\\img\\logo.ico', './img/')
+             ],
              hiddenimports=['win32timezone'],
              hookspath=[],
              runtime_hooks=[],
@@ -29,7 +32,8 @@ exe = EXE(pyz,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
-          console=False)
+          console=False,
+          icon='C:\\Users\\User\\Desktop\\Organizex-Photo_Organizer-master\\img\\logo.ico')
 
 coll = COLLECT(exe,
                Tree('C:\\Users\\User\\Desktop\\Organizex-Photo_Organizer-master'),
@@ -40,4 +44,4 @@ coll = COLLECT(exe,
                *[Tree(p) for p in (sdl2.dep_bins + glew.dep_bins)],
                upx=True,
                upx_exclude=[],
-               name='main', icon='C:\\Users\\User\\Desktop\\Organizex-Photo_Organizer-master\\img\\logo.ico')
+               name='main')

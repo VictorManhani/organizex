@@ -2,15 +2,15 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Organizex"
-#define MyAppVersion "1.6.0"
+#define MyAppVersion "1.6.1"
 #define MyAppPublisher "FullVE, Tecnologias."
-#define MyAppURL "http://www.fullve.com.br"
+#define MyAppURL "https://www.fullve.com.br"
 #define MyAppExeName "organizex.exe"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{F06FF826-E814-4D9F-AB03-E292CD62E574}
+AppId={{5B284DA3-50C3-427F-BC11-914F85A3F9D6}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -25,8 +25,8 @@ UsedUserAreasWarning=no
 LicenseFile=C:\Users\User\Desktop\Organizex-Photo_Organizer-master\dist\main\LICENSE.freetype.txt
 ; Remove the following line to run in administrative install mode (install for all users.)
 PrivilegesRequired=lowest
-OutputDir=C:\Users\User\Desktop\Organizex-Photo_Organizer-master\package
-OutputBaseFilename=Installer_Organizex_Windows_10_64x_vs_1.6.0
+OutputDir=C:\Users\User\Desktop\Organizex-Photo_Organizer-master\installer
+OutputBaseFilename=Organizex_Install_Windows_10_64x_vs_161
 SetupIconFile=C:\Users\User\Desktop\Organizex-Photo_Organizer-master\dist\main\img\logo.ico
 Compression=lzma
 SolidCompression=yes
